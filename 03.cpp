@@ -1,25 +1,17 @@
-// write a code to find the factorial of given number using class and object
+// fibonacci series
 
-#include <iostream>
-
-using namespace std;
-class Factorial 
-{
-public:
-    int rfact(int num) 
-    {
-        int fact = 1;
-        for (int i = 1; i <= num; i++) 
-            {fact *= i;}
-        return fact;
-    }};
+#include <iostream>  
+using namespace std;  
 int main() 
-{
-    int num;
-    cout << "Enter a number: ";
-    cin >> num;
-    Factorial factorialObj;
-    int result = factorialObj.rfact(num);
-    cout << "The factorial of " << num << " is " << result ;
-    return 0;
-}
+{  
+    int n1=0,n2=1,n3,i,num;    
+    cout<<"Enter the number of elements: ";    
+    cin>>num;    
+    cout<<n1<<" "<<n2<<" ";    
+    for(i=2;i<num;++i)    
+        {n3=n1+n2;    
+        cout<<n3<<" ";    
+        n1=n2;    
+        n2=n3;}    
+   return 0;
+}  
