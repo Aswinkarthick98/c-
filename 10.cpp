@@ -1,0 +1,16 @@
+//sum of cube of numbers till n 
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n, sum=0;
+    cout << "Enter a number: ";
+    cin >> n;
+    for (int i = 1; i <= n; ++i) 
+    {
+        sum += i*i*i;
+    }
+    cout << sum;
+    return 0;
+}

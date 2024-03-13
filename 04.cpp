@@ -1,8 +1,22 @@
-// write a code to read five subject marks for n students and generate grade 
-//     sheet using class and objeect
+// build a program to reverse a numebr using loop
+
 #include <iostream>
 using namespace std;
-class Student {
-    private:
-     
-  
+
+int main() 
+{
+  int n, r = 0, rem;
+
+  cout << "Enter an integer: ";
+  cin >> n;
+
+  while (n != 0) 
+  {
+    rem = n % 10;
+    r = r * 10 + rem;
+    n /= 10;
+  }
+
+  cout << "Reversed number: " << r ;
+
+}
